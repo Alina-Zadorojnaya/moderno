@@ -37,8 +37,7 @@ ul, li{
 }
 .title{
     color: $bg;
-    font-family: 'Roboto-Bold', sans-serif;
-    font-weight: 700;
+    @include f700;
     font-size: 36px;
     line-height: 60px;
     text-align: center;
