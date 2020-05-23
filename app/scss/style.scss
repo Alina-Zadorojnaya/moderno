@@ -1,13 +1,19 @@
 @import 'vars';
 @import "global";
 @import "fonts";
-
+.header{
+    background-color: #fff;
+}
 .header__top-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
     margin: auto;
+}
+.header__box{
+    display: flex;
+    align-items: center;
 }
 .header__text{
     margin-left: auto;
@@ -28,8 +34,16 @@
 .header__btn-login{
     background-color: $green;
 }
-.header__btn-register{
+.header__btn-register,
+.header__btn-logout{
     background-color: $red;
+    margin-left: 7px;
+}
+.header__btn-logout{
+    display: none;
+    &.header__btn-login--on{
+        display: block;
+    }
 }
 .header__menu{
     background-color: $bg;
@@ -52,6 +66,283 @@
         line-height: 30px;
     }
 }
+.header__circle{
+    &.active{
+        display: block;
+    }
+    display: none;
+    width: 34px;
+    height: 34px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    position: relative;
+    &::before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #a0a0a0;
+        font-size: 14px;
+    }
+    & +.header__circle{
+        margin-left: 15px;
+    }
+    span{
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        right: -7px;
+        top: -7px;
+        color: #fff;
+        font-size: 11px;
+    }
+}
+.notification{
+    span{
+        background-color: #fcb322;
+    }
+}
+.message{
+    span{
+        background-color: #ef6c00;
+    }
+}
+.basket{
+    margin-right: 20px;
+    span{
+        background-color: $green;
+    }
+}
+.header__btn-login--off{
+    display: none;
+}
+.user{
+    margin-right: 25px;
+    padding-right: 20px;
+    position: relative;
+        &::before{
+            content: "\f107";
+            position: absolute;
+            font-family: 'icomoon';
+            right: 0;
+            top: 0;
+            font-size: 16px;
+            color: #707070;
+        }
+    &__inner{
+        display: flex;
+    }
+    &__images{
+        width: 34px;
+        height: 34px;   
+        border-radius: 50%;
+        margin-right: 15px;
+        overflow: hidden;
+    }
+    &__info{
+        font-size: 14px ;
+        line-height: 24px;
+    }
+    &__name{
+        @include f500;
+        color: #222;
+    }
+    &__money{
+        @include f700;
+        color: $green;
+    }
+}
+.user__box{
+    position: relative;
+    height: 90px;
+    padding-top: 25px;
+    &:hover{
+        .user__menu{
+            height: auto;
+            border-width: 1px;
+            padding: 20px;
+            overflow: auto;
+        }
+    }
+}
+
+.user__menu{
+    width: 158px;
+    background-color: #fff;
+    padding:  0px 20px;
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    border-color: rgb(204, 204, 204);  
+    transition: all .3s;     
+    height: 0;
+    overflow: hidden;
+        a{
+            font-size: 12px;
+            color: $text;
+            margin-bottom: 15px;
+        }      
+}
+.basket__box{
+    margin-left: 15px;
+    position: relative;
+    &:hover{
+        .basket__menu{
+            height: auto;
+            border-width: 1px;
+            overflow: auto;
+        }
+    }
+}
+.basket__menu{
+    width: 268px;
+    background-color: #fff;
+    border:0px solid #e0e0e0;  
+    position: absolute;
+    z-index: 5;
+    top: 60px;
+    right: 0px;
+    transition: all .3s;     
+    height: 0;
+    overflow: hidden;
+}
+.basket__item{
+    border-bottom: 1px solid #e0e0e0;
+    padding: 22px 25px;
+    display: flex;
+    align-items: center;
+}
+.basket__images{
+    margin-right: 15px;
+}
+.basket__title{
+    color: $bg;
+    @include f700;
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-bottom:15px ;
+    display: flex;
+    justify-content: space-between;
+}
+.basket__info{
+    display: inline-block;
+    line-height: 23px;
+}
+.basket__info-name{
+    font-size: 15px;
+    @include f500;
+    color: $bg;
+}
+.basket__info-theam{
+    font-size: 12px;
+    color: $green;
+}
+.basket__info-price{
+    font-size: 16px;
+    color: $bg;
+    @include f500;
+}
+.basket__summ{
+    padding: 15px 15px ;
+    a{
+        color: #fff;
+        @include f700;
+        background-color: $green;
+        padding: 10px 15px 12px;
+    }
+    .basket__btn-checkout{
+        padding: 10px 10px 12px;
+        background-color: $red;
+        margin-left: 6px;
+    }
+}
+.basket__box,
+.message__box,
+.notification__box{
+    &:hover{
+        .header__circle::before{
+            color: #000;
+        }
+    }
+}
+.message__box,
+.notification__box{
+    position: relative;
+    margin-left: 15px;
+    &:hover{
+        .message__menu,
+        .notification__menu{
+            height: auto;
+            border-width: 1px;
+            overflow: auto;
+        } 
+    }
+}
+.message__menu, 
+.notification__menu{
+    width: 268px;
+    background-color: #fff;
+    border:0px solid #e0e0e0; 
+    position: absolute;
+    top: 62px;
+    right: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 0;
+}
+.message__item:first-child,
+.notification__item:first-child{
+    border-top: none;
+}
+.message__item,
+.notification__item{
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px;
+    line-height: 20px;
+    align-items: center;
+}
+.message__info,
+.notification__info{
+    margin: 0 20px;
+    width: 110px;
+}
+.message__info-name,
+.notification__info-name{
+    font-size: 12px;
+    @include f700;
+    color: $bg;
+}
+.message__info-theam,
+.notification__info-theam{
+    font-size: 11px;
+    color: $green;
+}
+.message__info-date,
+.notification__info-date{
+    font-size: 10px;
+    color: #707070;
+}
+
+.icon-mail-reply,
+.icon-envelope-o,
+.icon-bell-o{
+    color: #b0bec5;
+    font-size: 16px;
+}
+.icons-color::before{
+    color:#ef6c00 ;
+}
+
+.header__btn-menu,
+.menu__btn{
+    display: none;
+}
+
+//end header
 // start search//
 .search{
     background-position: center;
@@ -494,8 +785,8 @@
     }
   
 }
-.footer__col-menu{
-    width: 230px;
+.footer__col.footer__col-menu{
+   max-width: 230px;
     li{
         font-size: 15px;
         position: relative;
@@ -832,8 +1123,7 @@ button.icon-sort{
         & + li{
             margin-left: 6px;    
         }
-    }
-    a,
+        a,
     span{
         display: flex;
         align-items: center;
@@ -850,6 +1140,8 @@ button.icon-sort{
         }
        
     }
+    }
+     
 }
 .product__item-text{
     display: none;
@@ -929,3 +1221,5 @@ button.icon-sort{
 
 
 //end product page
+
+@import 'media';

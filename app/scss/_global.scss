@@ -18,6 +18,7 @@ body{
     line-height: 24px;
     color: $text;
     font-weight: 400;
+    overflow-x: hidden;
 }
 a{
     display: inline-block;
@@ -102,5 +103,19 @@ ul, li{
 @media (max-width: 720px){
     .container-fluid{
         padding: 0 15px;
+    }
+}
+
+.angle-right{
+    position: relative;
+    padding-left: 20px;
+    &::before{
+        position: absolute;
+        content: "\f105";
+        font-family: 'icomoon';
+        color: $green;
+        top: 0;
+        font-size: 14px;
+        left: 0;
     }
 }
