@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -302,56 +301,104 @@
                     <div class="breadcrumbs__inner">
                         <ul class="breadcrumbs__list">
                             <li><a href="#">Home</a></li>
-                            <li><span>Contact US</span></li>
+                            <li><span>Withdrawals</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="contact">
+            <section class="withdrawals">
                 <div class="container">
-                    <div class="contact__wrapper">
-                        <div class="contact__head">Contact With Us</div>
-                        <div class="contact__inner">
-                            <div class="contact__map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10686.102396811275!2d37.198156581431235!3d55.73285285708687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5452d6ce71861%3A0xf6c05633d8fd38a5!2z0KPRgdC-0LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNDMwODQ!5e0!3m2!1sru!2sua!4v1590491966650!5m2!1sru!2sua"
-                                     frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                            <div class="contact__box">
-                                <div class="contact__info">
-                                    <div class="contact__info-item">
-                                        <div class="contact__info-title icon-map-marker">Our Office Address</div>
-                                        <div class="contact__info-content">PO Box 16122 Collins Street West
-                                            Victoria 8007 Australia</div>
-                                    </div>
-                                    <div class="contact__info-item">
-                                        <div class="contact__info-title icon-phone">Phone</div>
-                                        <a href="tel:61383766284" class="contact__info-content">+61 3 8376 6284</a>
-                                    </div>
-                                    <div class="contact__info-item">
-                                        <div class="contact__info-title icon-envelope-o">E-mail</div>
-                                        <div class="contact__info-content">info@foxtar.com</div>
-                                    </div>
-                                </div>
-                                <div class="contact__form">
-                                    <div class="contact__form-title">
-                                        Drop Us A Message
-                                    </div>
+                    <div class="withdrawals__inner">
+                        <div class="withdrawals__col">
+                            <div class="withdrawals__box">
+                                <div class="withdrawals__title">Withdrawals Earnings</div>
+                                <div class="withdrawals__content">
                                     <form>
-                                        <div class="contact__form-row">
-                                            <input type="text" placeholder="Name*" required>
-                                            <input type="text" placeholder="E-mail*" required>
+                                        <div class="withdrawals__form-line">
+                                            <label>Amount to Withdraw ($2000.00 Maximum) <span>*</span> </label>
+                                            <input type="text" placeholder="Enter the amount you want to withdraw..." required>
                                         </div>
-                                        <textarea placeholder="Message*"></textarea>
-                                        <button type="submit">Send Message</button>
+                                        <div class="withdrawals__form-line">
+                                            <label>Choose your Withdraw Method <span>*</span> </label>
+                                            <select>
+                                                <option>Select Your Card</option>
+                                                <option>Select Your PayPel</option>
+                                            </select>
+                                        </div>
+                                        <div class="withdrawals__form-line">
+                                            <label>Your Account Name <span>*</span> </label>
+                                            <select>
+                                                <option>Select Your Card</option>
+                                                <option>Select Your PayPel</option>
+                                            </select>
+                                        </div>
+                                        <div class="withdrawals__form-line">
+                                            <label>Confirm Your Password <span>*</span> </label>
+                                            <input type="text" placeholder="Select Your Card" required>
+                                        </div>
+                                        <button>Request Withdrawal</button>
                                     </form>
+
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="withdrawals__col">
+                            <div class="withdrawals__box">
+                                <div class="withdrawals__title">Withdrawal History</div>
+                                <div class="withdrawals__content">
+                                    <div class="withdrawals__content-items">
+                                        <div class="withdrawals__content-item">
+                                            <div class="withdrawals__content-date">Dec 26th, 2016 </div>
+                                            <div class="withdrawals__content-mail"> Psdboss@paypal.com  </div>
+                                            <div class="withdrawals__content-price"> $200 </div>
+                                            <div class="withdrawals__content-status">Pending</div>
+                                        </div>
+                                        <div class="withdrawals__content-item">
+                                            <div class="withdrawals__content-date">Dec 26th, 2016 </div>
+                                            <div class="withdrawals__content-mail"> Psdboss@paypal.com  </div>
+                                            <div class="withdrawals__content-price"> $100 </div>
+                                            <div class="withdrawals__content-status withdrawals__content-paid"> Paid</div>
+                                        </div>
+                                        <div class="withdrawals__content-item">
+                                            <div class="withdrawals__content-date">Dec 26th, 2016 </div>
+                                            <div class="withdrawals__content-mail"> Psdboss@paypal.com  </div>
+                                            <div class="withdrawals__content-price"> $200 </div>
+                                            <div class="withdrawals__content-status withdrawals__content-paid"> Paid</div>
+                                        </div>
+                                        <div class="withdrawals__content-item">
+                                            <div class="withdrawals__content-date">Dec 26th, 2016 </div>
+                                            <div class="withdrawals__content-mail"> Psdboss@paypal.com  </div>
+                                            <div class="withdrawals__content-price"> $100 </div>
+                                            <div class="withdrawals__content-status withdrawals__content-paid"> Paid</div>
+                                        </div>
+                                        <div class="withdrawals__content-item">
+                                            <div class="withdrawals__content-date">Dec 26th, 2016 </div>
+                                            <div class="withdrawals__content-mail"> Psdboss@paypal.com  </div>
+                                            <div class="withdrawals__content-price"> $200 </div>
+                                            <div class="withdrawals__content-status withdrawals__content-paid"> Paid</div>
+                                        </div>
+                                        <div class="withdrawals__content-item">
+                                            <div class="withdrawals__content-date">Dec 26th, 2016 </div>
+                                            <div class="withdrawals__content-mail"> Psdboss@paypal.com  </div>
+                                            <div class="withdrawals__content-price"> $100 </div>
+                                            <div class="withdrawals__content-status withdrawals__content-paid"> Paid</div>
+                                        </div>
+                                        <div class="withdrawals__content-item">
+                                            <div class="withdrawals__content-date">Dec 26th, 2016 </div>
+                                            <div class="withdrawals__content-mail"> Psdboss@paypal.com  </div>
+                                            <div class="withdrawals__content-price"> $200 </div>
+                                            <div class="withdrawals__content-status withdrawals__content-paid"> Paid</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
 
 

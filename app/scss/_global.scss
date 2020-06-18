@@ -70,6 +70,8 @@ ul, li{
 .breadcrumbs{
     &__inner{
         padding: 45px 0 40px;
+        width: 1200px;
+        overflow: hidden;
     }
     &__list{
         li{
@@ -97,7 +99,9 @@ ul, li{
     }
 
 }
-
+#modal{
+    display: none;
+}
 
 
 @media (max-width: 720px){

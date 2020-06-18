@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -302,57 +301,80 @@
                     <div class="breadcrumbs__inner">
                         <ul class="breadcrumbs__list">
                             <li><a href="#">Home</a></li>
-                            <li><span>Contact US</span></li>
+                            <li><span>Upload Product</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="contact">
+            <section class="upload">
                 <div class="container">
-                    <div class="contact__wrapper">
-                        <div class="contact__head">Contact With Us</div>
-                        <div class="contact__inner">
-                            <div class="contact__map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10686.102396811275!2d37.198156581431235!3d55.73285285708687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5452d6ce71861%3A0xf6c05633d8fd38a5!2z0KPRgdC-0LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNDMwODQ!5e0!3m2!1sru!2sua!4v1590491966650!5m2!1sru!2sua"
-                                     frameborder="0" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                    <form>
+                        <div class="upload__inner">
+                            <div class="upload__inner-title">
+                                Upload Your item
                             </div>
-                            <div class="contact__box">
-                                <div class="contact__info">
-                                    <div class="contact__info-item">
-                                        <div class="contact__info-title icon-map-marker">Our Office Address</div>
-                                        <div class="contact__info-content">PO Box 16122 Collins Street West
-                                            Victoria 8007 Australia</div>
-                                    </div>
-                                    <div class="contact__info-item">
-                                        <div class="contact__info-title icon-phone">Phone</div>
-                                        <a href="tel:61383766284" class="contact__info-content">+61 3 8376 6284</a>
-                                    </div>
-                                    <div class="contact__info-item">
-                                        <div class="contact__info-title icon-envelope-o">E-mail</div>
-                                        <div class="contact__info-content">info@foxtar.com</div>
-                                    </div>
+                            <div class="upload__inner-content">
+                                <div class="upload__line">
+                                    <label>Select Categories <span>*</span></label>
+                                    <select>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                    </select>
                                 </div>
-                                <div class="contact__form">
-                                    <div class="contact__form-title">
-                                        Drop Us A Message
-                                    </div>
-                                    <form>
-                                        <div class="contact__form-row">
-                                            <input type="text" placeholder="Name*" required>
-                                            <input type="text" placeholder="E-mail*" required>
-                                        </div>
-                                        <textarea placeholder="Message*"></textarea>
-                                        <button type="submit">Send Message</button>
-                                    </form>
+                                <div class="upload__line">
+                                    <label>Product Name <span>*</span></label>
+                                    <input type="text" placeholder="Enter your product name here ...">
                                 </div>
+                                <div class="upload__line">
+                                    <label>Product Description <span>*</span></label>
+                                    <textarea placeholder="<h1> Type your text  here </h1/>"></textarea>
+                                </div>
+                                <div class="upload__line">
+                                    <label>Upload Main File <span>*</span></label>
+                                    <input type="file" placeholder="No File Choosen" data-placeholder="No File Choosen" data-browse="Choose File">
+                                </div>
+                                <div class="upload__line">
+                                    <label>Upload Screenshots <span>*</span></label>
+                                    <input type="file" placeholder="No File Choosen" data-placeholder="No File Choosen" data-browse="Choose File">
+                                </div>
+                                <div class="upload__line">
+                                    <label>File Included <span>*</span></label>
+                                    <select>
+                                        <option>Select File Type </option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                                <div class="upload__line">
+                                    <label>File Dimensions <span>*</span></label>
+                                    <input type="text" placeholder="Enter the item  dimentionss here ..." >
+                                </div>
+                                <div class="upload__line">
+                                    <label>Item Tags <span>*</span></label>
+                                    <input type="text" placeholder="Enter Tag Here">
+                                </div>
+                            </div>
+                            <div class="upload__inner-title">
+                                Set Your Price (US$)
+                            </div>
+                            <div class="upload__inner-content">
+                                <div class="upload__line">
+                                    <label>Regular License <span>*</span></label>
+                                    <input type="text" placeholder="$00.00">
+                                </div>
+                                <div class="upload__line">
+                                    <label>Extended License <span>*</span></label>
+                                    <input type="text" placeholder="$00.00">
+                                </div>
+                                <button type="submit">Submit</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </div>
-
+            </section>
 
 
 

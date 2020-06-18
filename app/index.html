@@ -207,7 +207,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="header__btn header__btn-login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
+                                <a class="header__btn header__btn-login" data-fancybox data-src="#modal"
+                                    href="javascript:;">Login</a>
                                 <a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
                                 <a class="header__btn header__btn-register" href="#">Register</a>
                             </div>
@@ -301,75 +302,258 @@
                 </div>
             </section>
             <section class="products">
-                <div class="container-fluid">
-                    <div class="products__title title">
-                        Let’s Check Out Our Newest Release Prodcuts
-                    </div>
-                    <div class="products__inner">
-                        <div class="products__inner-btn">
-                            <button type="button" data-filter="all">All</button>
-                            <button type="button" data-filter=".category-wordpress">WordPress</button>
-                            <button type="button" data-filter=".category-joomla">Joomla</button>
-                            <button type="button" data-filter=".category-pludins">Pludins</button>
-                            <button type="button" data-filter=".category-component">Component</button>
-                            <button type="button" data-filter=".category-psd">PSD</button>
+                <div class="product__wrapper">
+                    <div class="container-fluid">
+                        <div class="products__title title">
+                            Let’s Check Out Our Newest Release Prodcuts
                         </div>
-                        <div class="products__inner-box">
-                            <div class="product__item mix category-wordpress category-popular" data-order="1">
-                                <a class="product__item-img" href="#"
-                                    style=" background-image:url(images/content/product-item1.jpg);"></a>
-                                <div class="product__item-content">
-                                    <div class="product__item-name">
-                                        <a class="product__item-title" href="#">
-                                            Responsive Mobile APP
-                                        </a>
-                                        <a class="product__item-categoria" href="#">
-                                            Site Template
-                                        </a>
-                                    </div>
-                                    <div class="product__item-price">
-                                        $19
-                                    </div>
-                                </div>
-                                <div class="product__item-info">
-                                    <a class="product__item-author" href="#">
-                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
-                                        </div>
-                                        <span>Radiustheme</span>
-                                    </a>
-                                    <div class="product__item-star">
-                                        <div class="rate-star"></div> ( <span> 05</span>)
-                                    </div>
-                                </div>
+                        <div class="products__inner">
+                            <div class="products__inner-btn">
+                                <button type="button" data-filter="all">All</button>
+                                <button type="button" data-filter=".category-wordpress">WordPress</button>
+                                <button type="button" data-filter=".category-joomla">Joomla</button>
+                                <button type="button" data-filter=".category-pludins">Pludins</button>
+                                <button type="button" data-filter=".category-component">Component</button>
+                                <button type="button" data-filter=".category-psd">PSD</button>
                             </div>
-                            <div class="product__item mix category-pludins category-new" data-order="2">
-                                <a class="product__item-img" href="#"
-                                    style=" background-image:url(images/content/product-item2.jpg);"></a>
-                                <div class="product__item-content">
-                                    <div class="product__item-name">
-                                        <a class="product__item-title" href="#">
-                                            The Post Grid Pro
-                                        </a>
-                                        <a class="product__item-categoria" href="#">
-                                            WordPress Plugin
-                                        </a>
-                                    </div>
-                                    <div class="product__item-price">
-                                        $15
-                                    </div>
-                                </div>
-                                <div class="product__item-info">
-                                    <a class="product__item-author" href="#">
-                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                            <div class="products__inner-box">
+                                <div class="product__item mix category-wordpress category-popular" data-order="1">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item1.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                Responsive Mobile APP
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                Site Template
+                                            </a>
                                         </div>
-                                        <span>PsdBosS</span>
-                                    </a>
-                                    <div class="product__item-star">
-                                        <div class="rate-star"></div> ( <span> 06</span>)
+                                        <div class="product__item-price">
+                                            $19
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 05</span>)
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="product__item mix category-pludins category-new" data-order="2">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item2.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                The Post Grid Pro
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                WordPress Plugin
+                                            </a>
+                                        </div>
+                                        <div class="product__item-price">
+                                            $15
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>PsdBosS</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 06</span>)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__item mix category-psd category-new" data-order="3">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item3.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                Food Menu
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                Site Template
+                                            </a>
+                                        </div>
+                                        <div class="product__item-price">
+                                            $20
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 09</span>)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__item mix category-joomla category-wordpress category-popular"
+                                    data-order="4">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item4.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                Imac Mockup
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                Site Template
+                                            </a>
+                                        </div>
+                                        <div class="product__item-price">
+                                            $19
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 10</span>)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__item mix category-joomla category-psd category-new" data-order="5">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item5.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                Responsive Mobile APP
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                Site Template
+                                            </a>
+                                        </div>
+                                        <div class="product__item-price">
+                                            $19
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 05</span>)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__item mix category-joomla category-new" data-order="6">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item6.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                Responsive Mobile APP
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                Site Template
+                                            </a>
+                                        </div>
+                                        <div class="product__item-price">
+                                            $19
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 05</span>)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__item mix category-wordpress category-popular " data-order="7">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item7.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                Responsive Mobile APP
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                Site Template
+                                            </a>
+                                        </div>
+                                        <div class="product__item-price">
+                                            $19
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 45</span>)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__item mix category-component category-new" data-order="8">
+                                    <a class="product__item-img" href="#"
+                                        style=" background-image:url(images/content/product-item8.jpg);"></a>
+                                    <div class="product__item-content">
+                                        <div class="product__item-name">
+                                            <a class="product__item-title" href="#">
+                                                Responsive Mobile APP
+                                            </a>
+                                            <a class="product__item-categoria" href="#">
+                                                Site Template
+                                            </a>
+                                        </div>
+                                        <div class="product__item-price">
+                                            $19
+                                        </div>
+                                    </div>
+                                    <div class="product__item-info">
+                                        <a class="product__item-author" href="#">
+                                            <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                            </div>
+                                            <span>Radiustheme</span>
+                                        </a>
+                                        <div class="product__item-star">
+                                            <div class="rate-star"></div> ( <span> 05</span>)
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="product__item mix category-psd category-new" data-order="3">
+                            <div class="products__bottom-btn">
+                                <button type="button" data-filter=".category-new">All New Items</button>
+                                <button type="button" data-filter=".category-popular">Popular Items</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product__slider">
+                <div class="product__slider-wrapper">
+                    <div class="container-fluid">
+                        <div class="product__slider-title title">
+                            This Week Trending Products
+                        </div>
+                        <div class="product__slider-inner">
+
+                            <div class="product__item">
                                 <a class="product__item-img" href="#"
                                     style=" background-image:url(images/content/product-item3.jpg);"></a>
                                 <div class="product__item-content">
@@ -392,25 +576,25 @@
                                         <span>Radiustheme</span>
                                     </a>
                                     <div class="product__item-star">
-                                        <div class="rate-star"></div> ( <span> 09</span>)
+                                        <div class="rate-star"></div> ( <span> 05</span>)
                                     </div>
                                 </div>
                             </div>
-                            <div class="product__item mix category-joomla category-wordpress category-popular"
-                                data-order="4">
+
+                            <div class="product__item">
                                 <a class="product__item-img" href="#"
-                                    style=" background-image:url(images/content/product-item4.jpg);"></a>
+                                    style=" background-image:url(images/content/product-item9.jpg);"></a>
                                 <div class="product__item-content">
                                     <div class="product__item-name">
                                         <a class="product__item-title" href="#">
-                                            Imac Mockup
+                                            Food Menu
                                         </a>
                                         <a class="product__item-categoria" href="#">
                                             Site Template
                                         </a>
                                     </div>
                                     <div class="product__item-price">
-                                        $19
+                                        $20
                                     </div>
                                 </div>
                                 <div class="product__item-info">
@@ -420,24 +604,132 @@
                                         <span>Radiustheme</span>
                                     </a>
                                     <div class="product__item-star">
-                                        <div class="rate-star"></div> ( <span> 10</span>)
+                                        <div class="rate-star"></div> ( <span> 05</span>)
                                     </div>
                                 </div>
                             </div>
-                            <div class="product__item mix category-joomla category-psd category-new" data-order="5">
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item10.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item11.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item3.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item3.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
                                 <a class="product__item-img" href="#"
                                     style=" background-image:url(images/content/product-item5.jpg);"></a>
                                 <div class="product__item-content">
                                     <div class="product__item-name">
                                         <a class="product__item-title" href="#">
-                                            Responsive Mobile APP
+                                            Food Menu
                                         </a>
                                         <a class="product__item-categoria" href="#">
                                             Site Template
                                         </a>
                                     </div>
                                     <div class="product__item-price">
-                                        $19
+                                        $20
                                     </div>
                                 </div>
                                 <div class="product__item-info">
@@ -451,74 +743,236 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product__item mix category-joomla category-new" data-order="6">
-                                <a class="product__item-img" href="#"
-                                    style=" background-image:url(images/content/product-item6.jpg);"></a>
-                                <div class="product__item-content">
-                                    <div class="product__item-name">
-                                        <a class="product__item-title" href="#">
-                                            Responsive Mobile APP
-                                        </a>
-                                        <a class="product__item-categoria" href="#">
-                                            Site Template
-                                        </a>
-                                    </div>
-                                    <div class="product__item-price">
-                                        $19
-                                    </div>
-                                </div>
-                                <div class="product__item-info">
-                                    <a class="product__item-author" href="#">
-                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
-                                        </div>
-                                        <span>Radiustheme</span>
-                                    </a>
-                                    <div class="product__item-star">
-                                        <div class="rate-star"></div> ( <span> 05</span>)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product__item mix category-wordpress category-popular " data-order="7">
-                                <a class="product__item-img" href="#"
-                                    style=" background-image:url(images/content/product-item7.jpg);"></a>
-                                <div class="product__item-content">
-                                    <div class="product__item-name">
-                                        <a class="product__item-title" href="#">
-                                            Responsive Mobile APP
-                                        </a>
-                                        <a class="product__item-categoria" href="#">
-                                            Site Template
-                                        </a>
-                                    </div>
-                                    <div class="product__item-price">
-                                        $19
-                                    </div>
-                                </div>
-                                <div class="product__item-info">
-                                    <a class="product__item-author" href="#">
-                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
-                                        </div>
-                                        <span>Radiustheme</span>
-                                    </a>
-                                    <div class="product__item-star">
-                                        <div class="rate-star"></div> ( <span> 45</span>)
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product__item mix category-component category-new" data-order="8">
+                            <div class="product__item">
                                 <a class="product__item-img" href="#"
                                     style=" background-image:url(images/content/product-item8.jpg);"></a>
                                 <div class="product__item-content">
                                     <div class="product__item-name">
                                         <a class="product__item-title" href="#">
-                                            Responsive Mobile APP
+                                            Food Menu
                                         </a>
                                         <a class="product__item-categoria" href="#">
                                             Site Template
                                         </a>
                                     </div>
                                     <div class="product__item-price">
-                                        $19
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item11.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item8.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item2.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item4.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item6.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item5.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item1.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="product__item-info">
+                                    <a class="product__item-author" href="#">
+                                        <div class="avatar" style="background-image: url(images/content/user.jpg);">
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </a>
+                                    <div class="product__item-star">
+                                        <div class="rate-star"></div> ( <span> 05</span>)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a class="product__item-img" href="#"
+                                    style=" background-image:url(images/content/product-item11.jpg);"></a>
+                                <div class="product__item-content">
+                                    <div class="product__item-name">
+                                        <a class="product__item-title" href="#">
+                                            Food Menu
+                                        </a>
+                                        <a class="product__item-categoria" href="#">
+                                            Site Template
+                                        </a>
+                                    </div>
+                                    <div class="product__item-price">
+                                        $20
                                     </div>
                                 </div>
                                 <div class="product__item-info">
@@ -534,439 +988,6 @@
                             </div>
 
                         </div>
-                        <div class="products__bottom-btn">
-                            <button type="button" data-filter=".category-new">All New Items</button>
-                            <button type="button" data-filter=".category-popular">Popular Items</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="product__slider">
-                <div class="container-fluid">
-                    <div class="product__slider-title title">
-                        This Week Trending Products
-                    </div>
-                    <div class="product__slider-inner">
-
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item3.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item9.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item10.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item11.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item3.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item3.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item5.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item8.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item11.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item8.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item2.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item4.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item6.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item5.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item1.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <a class="product__item-img" href="#"
-                                style=" background-image:url(images/content/product-item11.jpg);"></a>
-                            <div class="product__item-content">
-                                <div class="product__item-name">
-                                    <a class="product__item-title" href="#">
-                                        Food Menu
-                                    </a>
-                                    <a class="product__item-categoria" href="#">
-                                        Site Template
-                                    </a>
-                                </div>
-                                <div class="product__item-price">
-                                    $20
-                                </div>
-                            </div>
-                            <div class="product__item-info">
-                                <a class="product__item-author" href="#">
-                                    <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
-                                    <span>Radiustheme</span>
-                                </a>
-                                <div class="product__item-star">
-                                    <div class="rate-star"></div> ( <span> 05</span>)
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
@@ -1216,22 +1237,22 @@
 
     <div id="modal">
         <div class="login__wrapper">
-        <div class="login__title">
-            Login
+            <div class="login__title">
+                Login
+            </div>
+            <form>
+                <label class="login__label-name">
+                    <input type="text" placeholder="Name" required>
+                </label>
+                <label class="login__label-pass">
+                    <input type="text" placeholder="Password" required>
+                </label>
+                <button type="submit">SUBMIT</button>
+                <a class="creat-acc" href="#">Creat An Account?</a>
+                <a class="lost-pass" href="#">Lost Password?</a>
+            </form>
         </div>
-        <form>
-            <label class="login__label-name">
-                <input type="text" placeholder="Name" required>
-            </label>
-            <label class="login__label-pass">
-                <input type="text" placeholder="Password" required>
-            </label>
-            <button type="submit">SUBMIT</button>
-            <a class="creat-acc" href="#">Creat An Account?</a>
-            <a class="lost-pass" href="#">Lost Password?</a>
-        </form>
     </div>
-</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
